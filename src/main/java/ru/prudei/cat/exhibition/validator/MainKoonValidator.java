@@ -8,7 +8,7 @@ public class MainKoonValidator implements CatValidator {
     @Override
     public boolean tryCertify(Cat cat) {
         if (cat.getBreed()==null) {
-            return false;
+            return true;
         }
         switch (cat.getBreed()) {
             case MAINE_KOON:
